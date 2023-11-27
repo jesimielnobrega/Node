@@ -13,7 +13,7 @@ class trans extends Transform{
 }
 
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async(req, res) => {
     
     return req
         .pipe(new trans())

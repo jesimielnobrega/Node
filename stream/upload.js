@@ -26,4 +26,5 @@ class OneToHundredstream extends Readable {
 fetch('http://localhost:3334', {
   method:'POST',
   body:new OneToHundredstream(),
+  duplex: 'half'
 })
